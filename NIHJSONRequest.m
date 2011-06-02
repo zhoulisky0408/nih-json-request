@@ -55,7 +55,7 @@
         return;
     
     if (self.postObject) {
-        NSString *charset = (NSString *)CFStringConvertEncodingToIANACharSetName (CFStringConvertNSStringEncodingToEncoding (self.stringEncoding));
+        NSString *charset = (NSString *)CFStringConvertEncodingToIANACharSetName(CFStringConvertNSStringEncodingToEncoding(self.stringEncoding));
         [self addRequestHeader:@"Content-Type" value:[NSString stringWithFormat:@"application/json; charset=%@", charset]];
         
         [super appendPostData:[[postObject JSONRepresentation] dataUsingEncoding:self.stringEncoding]];
