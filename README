@@ -1,13 +1,13 @@
 This is a mash-up of ASIHTTPRequest and JSON; the NIHJSONRequest class derives from ASIHTTPRequest, much like ASIFormDataRequest does, but posts a JSON representation of its postObject property instead of URL-encoded form data.
 
-    #include "NIHJSONRequest.h"
+    #import "NIHJSONRequest.h"
 
     NIHJSONRequest *request = [NIHJSONRequest requestWithURL:url];
     [request setPostObject:anyObject];
 
 The ASIHTTPRequest+JSON.h header adds a responseJSON method to ASIHTTPRequest that parses the request body as JSON and returns the appropriate NSDictionary or NSArray. Really this just saves typing, but is also perhaps cleaner.
 
-    #include "ASIHTTPRequest+JSON.h"
+    #import "ASIHTTPRequest+JSON.h"
 
     NSDictionary *response = [request responseJSON];
 
