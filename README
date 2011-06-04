@@ -12,3 +12,5 @@ The ASIHTTPRequest+JSON.h header adds a responseJSON method to ASIHTTPRequest th
     NSDictionary *response = [request responseJSON];
 
 The latter is included by the former, so you can call responseJSON on an NIHJSONRequest; it's implemented separately since you'll often expect JSON in response to a GET or even to a form data POST.
+
+Finally, the NIHJSONRequest+OAuth.h header is used in combination with my ASIHTTPRequest+OAuth category (which you'll find at https://github.com/keybuk/asi-http-request-oauth), it extends the NIHJSONRequest class to add an oauth_body_hash parameter for the posted JSON as defined by http://oauth.googlecode.com/svn/spec/ext/body_hash/1.0/oauth-bodyhash.html
