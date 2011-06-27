@@ -7,7 +7,7 @@
 
 #import "NIHJSONRequest.h"
 
-#import "JSON.h"
+#import "SBJson.h"
 
 
 @implementation NIHJSONRequest

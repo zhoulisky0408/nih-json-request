@@ -6,7 +6,7 @@
 //
 
 #import "ASIHTTPRequest+JSON.h"
-#import "JSON.h"
+#import "SBJson.h"
 
 
 @implementation ASIHTTPRequest (ASIHTTPRequest_JSON)
